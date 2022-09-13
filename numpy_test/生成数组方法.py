@@ -44,5 +44,14 @@ print(np.arange(0,10,5));
 uniform = np.random.uniform(0.0, 1.0, 1000000)
 print(uniform);
 plt.figure(figsize=(20,8),dpi=80)
-plt.hist(uniform,1000)
+#直方图
+plt.hist(uniform,bins=1000)
+plt.show()
+
+# #正态分布
+# #均值 标准差 形状
+normal = np.random.normal(0.0, 1.0, size=1000000)
+plt.figure(figsize=(20,8),dpi=80)
+#直方图 频率直方图 指的是发生的概率 频数
+plt.hist(normal,1000)
 plt.show()
